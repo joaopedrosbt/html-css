@@ -1,0 +1,45 @@
+body{
+    padding: 0px;
+}
+.box{
+    display: grid;
+    grid-template-areas:
+    "ML T L"
+    "ML C L2"
+    "ML R L3";
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 150px 350px 150px;
+}
+
+.titulo{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    grid-area: T;
+}
+.corpo{
+    background-color: pink;
+    grid-area: C;
+}
+.menuL{
+    background-color: purple;
+    grid-area: ML;
+
+    display: grid;
+    grid-template-areas: 
+    "foto"
+    "top"
+    "caixa";
+    grid-template-columns: 250px;
+    grid-template-rows: 150px 100px 200px;
+}
+.menu{
+    background-color: greenyellow;
+}
+.caixa3{
+    background-color: green;
+}
+.rodape{
+    background-color: yellow;
+    grid-area: R;
+}
