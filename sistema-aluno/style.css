@@ -1,0 +1,111 @@
+body{
+    background-color: beige;
+}
+header{
+    background-color: gold;
+    display: flex;
+    justify-content: space-between;
+}
+header > img{
+    height: 150px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top:60px;
+    font-size: large;
+}
+.links a:link{
+    text-decoration: none;
+}
+.links a:hover{
+    color: red;
+    cursor: grab;
+}
+
+article{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+footer{
+    background-color: brown;
+    height: 50px;
+}
+.main{
+    display: flex;
+    height: 500px;
+}
+.main > aside{
+    flex: 1;
+    background-color: gray;
+}
+.main > section{
+    flex: 4;
+    background-color: cornflowerblue;
+}
+table{
+    width: 100%;
+    height: 70%;
+    border-collapse:collapse;
+}
+td, th{
+    border: solid black 2px;
+}
+
+td:hover {background-color: beige;}
+
+td{
+    background-color: darkgray;
+}
+th{
+    background-color: gold;
+}
+
+h1{
+    text-align: center ;
+    font-size: x-large;
+
+}
+.box{
+    display: grid;
+    grid-template-areas: 
+    "qpes"
+    "qpro";
+    grid-template-rows: 60% 60%;
+    height: 500px;
+}
+.box > .qpessoal{
+    background-color: yellowgreen;
+    grid-area: qpes;
+
+}
+.box > .qprofissional{
+    background-color: gainsboro;
+    grid-area: qpro;
+    display: flex;
+    flex-direction: column;
+}
+.box > .qpessoal{
+    padding-top:5px;
+}
+.box > .qpessoal > .Nome{
+    display: flex;
+    flex-direction: column;
+}
+.box > .qpessoal > .Endereco{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.box > .qpessoal > .save{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.box > .qprofissional > .savepro{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
